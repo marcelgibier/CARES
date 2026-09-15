@@ -1,0 +1,67 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cares"
+version = "0.2.0"
+description = "Pipeline de generation d'un dataset de scenes audio conversationnelles (dialogue + evenements acoustiques)"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.24",
+    "tqdm>=4.65",
+]
+
+[project.optional-dependencies]
+# Text generation stages: templates, scenarios, dialogues, filtering.
+llm = [
+    "openai>=1.30",
+    "anthropic>=0.40",
+]
+# Filtering: BGE embeddings, plus the confusion-matrix figure.
+analysis = [
+    "sentence-transformers>=3.0",
+    "matplotlib>=3.8",
+]
+# ElevenLabs synthesis; pydub joins the MP3 chunks of a long text.
+tts = [
+    "elevenlabs>=1.10",
+    "pydub>=0.25",
+]
+# Scene mixing; without pedalboard the compressor falls back to a Python loop.
+audio = [
+    "soundfile>=0.12",
+    "librosa>=0.10",
+    "scipy>=1.11",
+    "pyloudnorm>=0.1.1",
+    "pedalboard>=0.9",
+]
+# Room-simulated reverberation; a synthetic IR is the fallback.
+room = [
+    "pyroomacoustics>=0.7",
+]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.6",
+]
+all = [
+    "cares[llm,analysis,tts,audio,room,dev]",
+]
+
+[project.scripts]
+cares = "cares.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["cares*"]
+
+[tool.setuptools.package-data]
+cares = ["resources/*.json"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B"]
+ignore = ["E501"]
+

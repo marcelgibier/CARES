@@ -1,0 +1,47 @@
+# --- Secrets ---------------------------------------------------------------
+.env
+.key
+*.key
+!*.key.example
+
+# --- Artefacts du pipeline (régénérables, souvent très volumineux) ----------
+data/
+data_previous/
+samples/
+samples.zip
+out_voices/
+audio-files/
+diversity_output/
+pair_data/
+vllm_logs/
+batch_results.jsonl
+
+# --- Médias ----------------------------------------------------------------
+*.wav
+*.mp3
+*.flac
+*.ogg
+*.m4a
+*.opus
+
+# --- Python ----------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# --- Divers ----------------------------------------------------------------
+*.tmp
+.DS_Store
+
+# --- Generated data, one-off analyses, paper drafts -------------------------
+other/
+
+# --- Local work notes, kept out of the remote ------------------------------
+CLAUDE.md

@@ -1,0 +1,164 @@
+{
+  "topics": [
+    {
+      "category": "Culture, identity, and beliefs",
+      "items": [
+        "History",
+        "Cultural identity",
+        "Religion and spirituality",
+        "Language and its evolution",
+        "Art",
+        "Traditions and customs"
+      ]
+    },
+    {
+      "category": "Family and relationships",
+      "items": [
+        "Parent-child relationships",
+        "In-laws",
+        "Divorce and separation",
+        "Marriage",
+        "Couple life and romantic relationships",
+        "Raising children",
+        "Friendship",
+        "Family conflicts",
+        "Loneliness",
+        "Grandparents and generational legacy"
+      ]
+    },
+    {
+      "category": "Money and finances",
+      "items": [
+        "Consumer habits",
+        "Inheritance",
+        "Debt",
+        "Cost of living",
+        "Investments",
+        "Inflation",
+        "Purchasing power",
+        "Saving money",
+        "Taxes",
+        "Real estate"
+      ]
+    },
+    {
+      "category": "Education and learning",
+      "items": [
+        "Continuing education",
+        "Learning languages",
+        "Higher education",
+        "Reading",
+        "School and the education system"
+      ]
+    },
+    {
+      "category": "Practical and daily life",
+      "items": [
+        "Transportation and mobility",
+        "Weather and seasons",
+        "Fashion and style",
+        "Daily routines",
+        "Housing",
+        "Time management",
+        "Cleaning and home organization",
+        "Neighbors",
+        "Shopping and consumption",
+        "Pets"
+      ]
+    },
+    {
+      "category": "Environment",
+      "items": [
+        "Energy and the energy transition",
+        "Recycling and waste sorting",
+        "Responsible consumption",
+        "Biodiversity",
+        "Everyday ecology",
+        "Climate change"
+      ]
+    },
+    {
+      "category": "Leisure and culture",
+      "items": [
+        "Vacations",
+        "Travel",
+        "Cooking and gastronomy",
+        "Video games",
+        "Sports and competitions",
+        "Music",
+        "Movies",
+        "Going out with friends",
+        "DIY and home improvement",
+        "Gardening"
+      ]
+    },
+    {
+      "category": "Work and career",
+      "items": [
+        "Remote work",
+        "Workplace stress",
+        "The ideal job",
+        "Work-life balance",
+        "Unemployment",
+        "Career change",
+        "Relationships with colleagues",
+        "Salary and compensation",
+        "Retirement",
+        "Entrepreneurship"
+      ]
+    },
+    {
+      "category": "Society and current affairs",
+      "items": [
+        "Elections",
+        "Politics",
+        "Immigration",
+        "Feminism and gender equality",
+        "Justice and the legal system",
+        "Safety and crime",
+        "Generation gaps",
+        "Social inequalities",
+        "Racism and discrimination",
+        "Media and information"
+      ]
+    },
+    {
+      "category": "Big existential questions",
+      "items": [
+        "Happiness",
+        "The meaning of life",
+        "Death and grief",
+        "The future and fears about tomorrow",
+        "Freedom",
+        "Love",
+        "Dreams, ambitions, and life goals"
+      ]
+    },
+    {
+      "category": "Health and well-being",
+      "items": [
+        "Healthy eating",
+        "Stress and anxiety",
+        "Aging",
+        "Diets",
+        "Mental health",
+        "Sports and exercise",
+        "Sleep",
+        "Alternative medicine",
+        "Addictions",
+        "Preventive healthcare"
+      ]
+    },
+    {
+      "category": "Technology and digital life",
+      "items": [
+        "Artificial intelligence",
+        "Social media",
+        "The internet and constant connectivity",
+        "Smartphones in daily life",
+        "Digital privacy",
+        "Screens and children"
+      ]
+    }
+  ]
+}

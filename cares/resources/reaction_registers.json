@@ -1,0 +1,134 @@
+{
+  "_comment": "Reaction registers, drawn from a fixed seed by cares/allocation.py and quoted in the stage 3 prompt. A register describes what the speaker DOES, never what they SAY: writing a phrasing here would have it copied verbatim across the dataset. Two admission criteria, both eliminating. (1) MEANING: a register enters only if its realisation stops making sense once the sound is removed from the timeline. (2) RENDERING: the realisation must be an event the synthesiser actually produces - an added sound, a silence, a level - never an adjective about manner, which was measured as acoustically null. The 'delivery' field marks a register whose move leaves no textual trace; the prompt then requires one of 'required_tags'. Adding or removing a register changes the dataset and the GOLDEN_DIGEST of tests/test_allocation.py.",
+  "registers": {
+    "verbal": [
+      {
+        "key": "name_the_source",
+        "move": "The speaker settles what made the noise or where in the surroundings it came from — asserting it, guessing at it, or putting the question to the other — and hands that over as one plain piece of shared information, with no verdict attached and nothing asked in return, before the interrupted line resumes. It reveals only that they are in the same room and one of them looked up first.",
+        "distinct_from": "This is the flat naming option and the only register that puts the object itself into the turn; every other one takes the source as given or never reaches it, so none of them can produce this line. The instant any evaluation, consequence, or bid for the other's uptake attaches to it, it has become a different register."
+      },
+      {
+        "key": "read_it_as_a_sign",
+        "move": "The speaker treats the sound as evidence and states what it means is going on or has just changed — an unseen scene reconstructed, or a fact now bearing on these two, sometimes with a small practical adjustment hung on it — then goes back to the subject. The claim reaches past what was actually audible, and the source may never be named at all.",
+        "distinct_from": "Naming stops at what the thing was; this draws a conclusion from it and can skip the object entirely. It carries news, where invoke_the_pattern insists there is none, and it asserts a state of affairs where sensory_verdict asserts only a sensation."
+      },
+      {
+        "key": "sensory_verdict",
+        "move": "The speaker passes judgement on the noise purely as a sensation — its force, its pitch, its edge, its nearness, how long it hung, how much of the room it took — without asserting what produced it and without drawing anything from it. The impression is tossed off as an aside and abandoned, admiring or wincing but claiming nothing about whether the thing should have happened.",
+        "distinct_from": "It never says what the thing was, unlike name_the_source, and never says what it portends, unlike read_it_as_a_sign. The appraisal stays out there on the sound rather than turning inward on the speaker's own state, which is what report_the_wake does."
+      },
+      {
+        "key": "turn_to_the_companion",
+        "move": "The other person, not the noise, becomes the object of the turn: the speaker reads the reaction that just crossed their face, steadies them or excuses the thing on the setting's behalf, or pins it on them as a quick jab the relationship can absorb. A beat of attention lands on somebody, and then the topic resumes without waiting for a real answer.",
+        "distinct_from": "Every other register takes the sound, its meaning, or its effects as its subject; this takes a person's response to it, which makes the turn social rather than descriptive. It attends to a companion, where repair_the_channel attends only to the message getting through."
+      },
+      {
+        "key": "repair_the_channel",
+        "move": "The sound is treated solely as damage to being heard: the speaker lifts their delivery over it, holds the line until it clears, reclaims the stretch it swallowed, or moves the exchange somewhere it can survive, then carries on from where the talk stalled. The noise is never characterised, only worked around.",
+        "distinct_from": "Its object is the conversation rather than the event, so it yields an adjustment or an instruction where every other register yields a comment. Unlike a behavioural derail the interference is deliberately voiced to the other and the speaker's thread is never lost."
+      },
+      {
+        "key": "invoke_the_pattern",
+        "move": "The speaker answers out of knowledge of the setting rather than of the event, filing the noise against what this place at this hour habitually produces — due about now, overdue, out of character for here, the standing cost of being present — and closes it on that ground, waving it away as routine or wearing it as the usual imposition. The instance counts only as one more example, and the other is quietly instructed to stop attending.",
+        "distinct_from": "It speaks about recurrence, where sensory_verdict reacts to this single occurrence and read_it_as_a_sign reports a change. It denies the event any news value, which no other register does."
+      },
+      {
+        "key": "report_the_wake",
+        "move": "The noise itself is never characterised — only what it disturbed is: the speaker's own jolt or caught breath, a grip or a thought physically lost, something in the room that shifted, rattled, or now needs rescuing. The speaker deals with the small mess in passing and continues.",
+        "distinct_from": "Its referent is a body or an object, never the sound, so it produces turns in which nothing about the noise is stated at all — unreachable for sensory_verdict or name_the_source. Because the disturbance is said out loud and the thread survives, it also stays clear of the behavioural type."
+      }
+    ],
+    "pivot": [
+      {
+        "key": "name_and_pin_it",
+        "move": "The speaker says outright what made the sound and treats settling its identity as the business at hand — which one it is, whose it is, whether it is the expected one — and the pair keep working the attribution, correcting or refining it until it is fixed or abandoned. This is the plain-label draw, deliberately one option among many rather than the default.",
+        "distinct_from": "The only register whose turns may carry the source's name; every other one reaches the sound through its impact, its cost, its fault, or what it retrieved. Against reconstruct_the_unseen, identity here is closed early and the turns spend themselves on the named thing's properties, whereas there the label never arrives and asserting one would end the exchange."
+      },
+      {
+        "key": "dwell_on_the_impression",
+        "move": "The speaker stays with what hearing it was like — its force, its edge, how far it seemed to carry, what it did to the room or to the body, how it measured against what they were braced for — and the other matches the reaction, doubts it, or plainly does not share it, so the turns become a comparison of the two responses and from there of the two people. Nothing is explained and nothing is remedied.",
+        "distinct_from": "It never asks what produced the sound or what follows from it, so a label or a plan would close it rather than satisfy it. Against pass_judgement_on_it, the sound is registered and compared rather than appraised: nobody is at fault and nothing is claimed to be out of order."
+      },
+      {
+        "key": "pass_judgement_on_it",
+        "move": "The speaker takes a position on whether the sound has any business happening — at this hour, in this place, by whoever is answerable for it — or gets in ahead of the objection the other is visibly about to make, and the two trade positions, harden, concede, or fall into a small dispute about what ought to be put up with here. Whoever is responsible is out of reach, so the turns produce a verdict and never a remedy.",
+        "distinct_from": "Against dwell_on_the_impression, it appraises rather than describes, and could be delivered by someone entirely unmoved by the sound itself. Against weigh_the_cost_to_them, no arrangement is made and nobody is dispatched — the shared indignation, or the argument about it, is the whole content."
+      },
+      {
+        "key": "reconstruct_the_unseen",
+        "move": "The speaker treats the sound as evidence of a situation they cannot see and reasons backwards to what must be going on — reading its direction, its nearness, whether anything preceded it — while the other extends the reconstruction or puts up a rival one, so the turns build and revise a hypothesis rather than settle it.",
+        "distinct_from": "The source is never labelled and a confident label would kill the exchange, which separates it from name_and_pin_it. Against pass_judgement_on_it, curiosity is the entire motive: nothing hinges on being right and no one is being held to account."
+      },
+      {
+        "key": "play_it_up",
+        "move": "The speaker answers the sound by overstating it, lending it intentions or a character, or casting it into a situation that is plainly not what happened, and the other picks the invention up and tries to top it; the pair keep it running, so what holds the conversation is the escalation the sound started.",
+        "distinct_from": "The only register in which accuracy is beside the point — every other one means what it says about the sound. Against reconstruct_the_unseen, which also invents outward from what was heard, the turns here get further from the truth on purpose rather than closer to it."
+      },
+      {
+        "key": "weigh_the_cost_to_them",
+        "move": "The speaker converts the sound into a cost falling on the two of them — what it delays, wrecks, forces, or now requires somebody to go and deal with — and the turns become negotiation: whether it warrants getting up, who goes, what has to change, whether it can wait. It sustains through the revised arrangement being settled and then second-guessed.",
+        "distinct_from": "It ends in decisions, where pass_judgement_on_it ends in a verdict and play_it_up ends in nothing. The sound's force or character matters only as far as it makes work: nothing about it is described for its own sake, unlike dwell_on_the_impression."
+      },
+      {
+        "key": "follow_it_out_of_the_room",
+        "move": "The sound opens onto something already lived — a place the speaker once knew, a job they held, someone absent — and they go there; the other draws the account out or answers it with a counterpart, and the turns stay inside what was retrieved, the present sound having stopped mattering within a turn or two.",
+        "distinct_from": "The only register whose topic ends up not being the sound at all. Against weigh_the_cost_to_them, it leaves the present moment instead of managing it; and unlike the behavioral reaction type, the departure is openly occasioned by the sound and the original subject is never recovered."
+      },
+      {
+        "key": "downgrade_it_to_routine",
+        "move": "The speaker demotes the sound to a standing fact of where they are and backs the claim with local knowledge — how long it has gone on, how often, the hour it always comes, whether it is getting worse — and the other's surprise, doubt or objection keeps them justifying, so the pair stay on the sound as a pattern of the place rather than as an event.",
+        "distinct_from": "It asserts familiarity where reconstruct_the_unseen works an answer out, and it refuses the grievance where pass_judgement_on_it presses one. Against name_and_pin_it, the claim is that the sound is unremarkable here, which sustains for several turns without the source ever needing a label."
+      }
+    ],
+    "behavioral": [
+      {
+        "key": "breaks_off_and_rebuilds",
+        "move": "Mid-structure the turn comes apart — the line stops dead, or the construction disintegrates and has to be re-entered — and the speaker gets themselves moving again from a point earlier than the break, either re-treading ground already covered or laying the same point down a second time by a rougher route. The idea survives intact and only the sentence carrying it does not; the repair is done alone, inside the same turn, and is never remarked on.",
+        "distinct_from": "Nobody is enlisted and nothing is asked, which separates it from both outward registers. The damage is to the machinery of the sentence rather than to any item inside it: the speaker is never reaching for a word, only for their footing, which is what keeps it clear of search_in_the_open."
+      },
+      {
+        "key": "search_in_the_open",
+        "move": "One specific thing the speaker was holding — a name, a figure, a term, the precise item — drops out and refuses to come back, and they hunt for it audibly, keeping the sentence open, circling the gap with a stand-in or an approximation before pushing on without it; it may land several beats later, out of position. The grammar stays fully staffed while the content is short-handed, which shows attention split rather than lost.",
+        "distinct_from": "The sentence is never discarded or restarted, and what fails is one localised item rather than the speaker's footing. The reaching is on the page — visibly performed — where every register that keeps its fluency conceals its damage instead."
+      },
+      {
+        "key": "over_secures_the_point",
+        "move": "The disturbance comes out as excess rather than deficit: the speaker clamps down on what they were saying, restating it more forcefully than the exchange called for, respelling its stakes, pressing the core of it a second time as if it might otherwise get away. Nothing is lost — the point is held down by force, and the over-insistence is the only trace left.",
+        "distinct_from": "It is the only register producing more speech and more emphasis instead of less, so it cannot collapse into any stall, hole or vagueness. The speaker knows they are going over it again — this is deliberate reinforcement, not a failure to track what was already said."
+      },
+      {
+        "key": "hands_find_something_to_do",
+        "move": "The speaker's attention drops onto something physically present and is spent dealing with it — an object, a task already in their hands, their own position or footing — the talk breaking off for as long as that takes before the subject is picked back up. The displacement is fully visible while its cause never appears on the page.",
+        "distinct_from": "What takes the turn is an action on something in the scene, not a lapse in the speech itself: the sentence stops because the hands are busy, where search_in_the_open keeps the sentence open and talks around what is missing. The thing handled must have nothing to do with what actually pulled them, or the move stops being behavioral."
+      },
+      {
+        "key": "asks_for_the_lost_place",
+        "move": "The speaker stops, cannot get going again on their own, and openly makes the other person responsible for their own lost place; the partner supplies it and the speaker takes the subject back from there. The repair is split across two turns, and it exposes how far the speaker assumes the other was actually tracking them.",
+        "distinct_from": "The only register where the speaker asks about their OWN memory rather than about the topic — the plainest form of the move, kept as one draw among many so that it stops being the reflex. Unlike every self-repair register, the content that restarts the subject comes out of the other mouth."
+      },
+      {
+        "key": "stalls_inside_the_phrase",
+        "move": "The turn arrests where nothing licenses a stop, inside a unit whose parts belong together, between a word and the one it governs or the one that completes it, and it stays arrested far past anything that could be taken for breathing. The same sentence then resumes from exactly the point it halted and closes as it was always going to close. Nothing is repeated, nothing is substituted, nothing is abandoned, and the arrest is never acknowledged once the line is running again, so the whole of the disturbance is the interval and the only evidence it leaves is how long it lasted.",
+        "distinct_from": "Against breaks_off_and_rebuilds the construction survives untouched: no earlier point is re-entered and no second route to the same content is laid down, so a resumption that re-treads any ground has produced the wrong register. Against search_in_the_open nothing has gone missing and nothing is being reached for, the interval being spent on nothing at all rather than on an audible hunt, and what follows it is the ordinary next word in position. It enlists nobody, unlike asks_for_the_lost_place; it puts no object, task or footing into the turn, unlike hands_find_something_to_do; and it yields less speech rather than more, unlike over_secures_the_point. It is the only register whose entire realisation falls between two words rather than in them.",
+        "delivery": true,
+        "required_tags": [
+          "[pauses]"
+        ]
+      },
+      {
+        "key": "the_body_cuts_in",
+        "move": "Something the speaker did not choose to do arrives in the middle of a unit whose parts belong together, the throat closing on an intake, a swallow, the chest resetting itself, and the words on either side of it join into one uninterrupted construction with nothing dropped, nothing repeated and nothing re-entered from further back. The speaker neither slows for it nor acknowledges it, and the point being made arrives whole and in the order it was already taking. The body has answered the disturbance and the utterance has declined to, so the turn is fluent by every measure that can be read and disturbed by every measure that can be heard.",
+        "distinct_from": "It is the only register in which the interruption is a sound the speaker emits rather than an absence, a failure or an excess, so it is the only one that can leave the sentence perfect and still put something into the audio. Against stalls_inside_the_phrase the interval is occupied rather than emptied and nothing is held open: the line is displaced by an event instead of suspended by one. Every other register in this type damages the speaking itself, the construction, one item inside it, or the speaker's hold on their own place, and here the utterance survives completely intact, so no stall, hole, search or insistence can reach it. Nothing is addressed to the other person and nothing in the room is acted on, which keeps it clear of hands_find_something_to_do and of every outward move.",
+        "delivery": true,
+        "required_tags": [
+          "[gasps]",
+          "[clears throat]",
+          "[gulps]",
+          "[swallows]",
+          "[sniffs]",
+          "[coughs]"
+        ]
+      }
+    ]
+  }
+}

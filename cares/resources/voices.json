@@ -1,0 +1,49 @@
+{
+  "_comment": "ElevenLabs voice pool with a gender for each. Gender is pre-allocated by cares/allocation.py and carried by the scenario, so synthesis must pick a matching voice. Override with --voices or --voices-file.",
+  "voices": [
+    {
+      "voice_id": "56AoDkrOh6qfVPDXZ7Pt",
+      "gender": "F"
+    },
+    {
+      "voice_id": "UgBBYS2sOqTuMpoF3BR0",
+      "gender": "M"
+    },
+    {
+      "voice_id": "L0yTtpRXzdyzQlzALhgD",
+      "gender": "F"
+    },
+    {
+      "voice_id": "XEQBC9sleaE3f5ff82UR",
+      "gender": "F"
+    },
+    {
+      "voice_id": "CaT0A6YBELRBgT6Qa2lH",
+      "gender": "F"
+    },
+    {
+      "voice_id": "4uN5YeBITFJsw8t45RIV",
+      "gender": "F"
+    },
+    {
+      "voice_id": "3gsg3cxXyFLcGIfNbM6C",
+      "gender": "M"
+    },
+    {
+      "voice_id": "c6SfcYrb2t09NHXiT80T",
+      "gender": "M"
+    },
+    {
+      "voice_id": "wWWn96OtTHu1sn8SRGEr",
+      "gender": "M"
+    },
+    {
+      "voice_id": "NNl6r8mD7vthiJatiJt1",
+      "gender": "M"
+    },
+    {
+      "voice_id": "QF9HJC7XWnue5c9W3LkY",
+      "gender": "M"
+    }
+  ]
+}
