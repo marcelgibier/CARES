@@ -1,7 +1,7 @@
 """Does a new backend actually HEAR? To be run before any campaign.
 
 Three open questions are asked about a scene whose place, sounds and dialogue
-are known; the answers are checked for degeneracy (a token or a sentence
+are known, the answers are checked for degeneracy (a token or a sentence
 repeated forever) and for clues that the model really listened. The reply is
 printed as well: the script makes the verdict easy, not automatic.
 
