@@ -4,7 +4,6 @@
   <p><strong>Controlled Audio Reactions in Environmental Scenes</strong></p>
   <p>
     <a href="https://marcelgibier.github.io/cares/"><strong>Project page</strong></a>
-    &middot; the pipeline and five example scenes to listen to
   </p>
 </div>
 
