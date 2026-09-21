@@ -2,6 +2,10 @@
   <img src="assets/logo.svg" alt="" width="120" height="120">
   <h1>CARES</h1>
   <p><strong>Controlled Audio Reactions in Environmental Scenes</strong></p>
+  <p>
+    <a href="https://marcelgibier.github.io/cares/"><strong>Project page</strong></a>
+    &middot; the pipeline and five example scenes to listen to
+  </p>
 </div>
 
 CARES generates two-speaker audio scenes in which environmental sounds are placed
