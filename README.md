@@ -53,17 +53,17 @@ Every stage writes under one data root (`./data` by default, or `--data-dir`, or
 # 1. Templates
 cares templates --base-url http://localhost:8000/v1 --model Qwen --concurrency 32
 
-# 2. Scenarios: deterministic pre-allocation plus a generated subject
+# 2. Scenarios: deterministic pre-allocation 
 cares scenarios --base-url http://localhost:8000/v1 --model Qwen --concurrency 64
 
-# 3. Dialogues. --batch halves the cost, with deferred results
+# 3. Dialogues. --batch halves the cost
 cares dialogues --model claude-opus-4-8 --concurrency 8
 
 # 4. Rejection sampling
 cares filter --base-url http://localhost:8000/v1 --model maverick --tau 0.82
 cares filter --finalize            # writes filter_output/dialogues_filtered.json
 
-# 5. Voices, then forced alignment of the text on them
+# 5. Voices then forced alignment
 cares tts --input data/filter_output/dialogues_filtered.json --voices "id1,id2,id3"
 cares align
 
